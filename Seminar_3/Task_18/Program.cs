@@ -4,7 +4,7 @@
 Console.Write("Введите номер четверти: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number < 0 || number > 4)
+if (number < 1 || number > 4)
 {
     Console.WriteLine("Такой четверти нет");
     return;
