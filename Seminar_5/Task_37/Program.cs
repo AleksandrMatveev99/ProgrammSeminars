@@ -16,7 +16,7 @@ int[] workNumbers(int[] array)
 {
     int newSize = array.Length / 2 + array.Length % 2; // int newSize = (array.Length + 1) / 2;
     int[] newArray = new int[newSize];
-    for (int i = 0; i < newSize; i++)
+    for (int i = 0; i < array.Length / 2; i++)
     {
         newArray[i] = array[i] * array[array.Length - 1 - i];
     }
