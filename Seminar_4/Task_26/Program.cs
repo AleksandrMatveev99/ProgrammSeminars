@@ -16,7 +16,6 @@ int CountDigit(int remainingNumber)
     }
     return count;
 }
-// int number = ReadNumber("Введите число: ");
-// int countDig = CountDigit(number);
-// Console.WriteLine(countDig);
-Console.WriteLine(-546 % 10);
+int number = ReadNumber("Введите число: ");
+int countDig = CountDigit(number);
+Console.WriteLine(countDig);
