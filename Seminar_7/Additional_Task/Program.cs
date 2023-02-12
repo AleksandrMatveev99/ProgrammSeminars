@@ -13,7 +13,7 @@ int[,] TrianglePascal(int size)
     {
         for (int j = 0; j <= i; j++)
         {
-            matrix[i,j] = Factorial(i)/(Factorial(j)*Factorial(i-j));
+            matrix[i, j] = Factorial(i) / (Factorial(j) * Factorial(i - j));
         }
     }
     return matrix;
@@ -25,7 +25,7 @@ void PrintMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (matrix[i,j] == 0) Console.Write(" ");
+            if (matrix[i, j] == 0) break;
             else Console.Write(matrix[i, j] + " ");
         }
         Console.WriteLine();
