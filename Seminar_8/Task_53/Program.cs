@@ -44,10 +44,10 @@ void ReducingLines(int[,] matrix)
 
 int m = ReadNumber("Введите количество строк: ");
 int n = ReadNumber("Введите количество столбцов: ");
-int maxValue = ReadNumber("Введите максимальное число: ");
 int minValue = ReadNumber("Введите минимальное число: ");
+int maxValue = ReadNumber("Введите максимальное число: ");
 
-int[,] array = GetRandomMatrix(m, n, maxValue, minValue);
+int[,] array = GetRandomMatrix(m, n, minValue, maxValue);
 PrintMatrix(array);
 Console.WriteLine();
 ReducingLines(array);
